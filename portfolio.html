@@ -21,44 +21,45 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!--Header section-->
     <header class="header">
-      <div class="container header-container">
-        <a class="logo link" href="./index.html"
+      <div class="container header__container">
+        <a class="logo logo__header link" href="./index.html"
           ><span class="web">Web</span>Studio</a
         >
 
-        <nav class="header-nav">
-          <!--Навігація на інші сторінки сайту-->
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="./index.html">Студія</a>
+        <!--Навігація на інші сторінки сайту-->
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студія</a>
             </li>
             <li class="header-item">
               <a
-                class="header-link header-link-current link"
+                class="nav__link nav__link--current link"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
             <li class="header-item">
-              <a class="header-link link" href="">Контакти</a>
+              <a class="nav__link link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <!--Контакти-->
-        <ul class="contacts-item list">
+        <ul class="header-contacts list">
           <li>
             <a
-              class="contacts-mail contact-link link"
+              class="header-contacts__mail header-contacts__link link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contacts-icon" width="16" height="12">
+              <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -66,10 +67,10 @@
           </li>
           <li>
             <a
-              class="contacts-phone contact-link link"
+              class="header-contacts__phone header-contacts__link link"
               href="tel:+380961111111"
             >
-              <svg class="contacts-icon" width="10" height="16">
+              <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#telephone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -85,26 +86,26 @@
           <h1 class="visually-hidden">Приклади робіт</h1>
           <!--Filtr button-->
           <ul class="portfolio-menu list">
-            <li class="portfolio-menu-item">
+            <li class="portfolio-menu__item">
               <button class="filtr-butoon current" type="button">Все</button>
             </li>
-            <li class="portfolio-menu-item">
+            <li class="portfolio-menu__item">
               <button class="filtr-butoon" type="button">Веб-сайти</button>
             </li>
-            <li class="portfolio-menu-item">
+            <li class="portfolio-menu__item">
               <button class="filtr-butoon" type="button">Додатки</button>
             </li>
-            <li class="portfolio-menu-item">
+            <li class="portfolio-menu__item">
               <button class="filtr-butoon" type="button">Дизайн</button>
             </li>
-            <li class="portfolio-menu-item">
+            <li class="portfolio-menu__item">
               <button class="filtr-butoon" type="button">Маркетинг</button>
             </li>
           </ul>
           <!--Examples of work-->
-          <ul class="examples-list list">
-            <li class="examples-item">
-              <a class="example-link link" href="">
+          <ul class="examples list">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
                     src="./images/portfolio/img1.jpg"
@@ -119,14 +120,14 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">Технокряк</h2>
-                  <p class="portfolio-item">Веб-сайт</p>
+                <div class="cards">
+                  <h2 class="cards__title">Технокряк</h2>
+                  <p class="cards__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img src="./images/portfolio/img2.jpg" alt="Дизайн Постера" />
                   <div class="overlay">
@@ -139,16 +140,16 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">
+                <div class="cards">
+                  <h2 class="cards__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-item">Дизайн</p>
+                  <p class="cards__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
                     src="./images/portfolio/img3.jpg"
@@ -163,16 +164,16 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">
+                <div class="cards">
+                  <h2 class="cards__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="portfolio-item">Додаток</p>
+                  <p class="cards__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
                     src="./images/portfolio/img4.jpg"
@@ -188,16 +189,16 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">
+                <div class="cards">
+                  <h2 class="cards__title">
                     Проект <span lang="en">Prime</span>
                   </h2>
-                  <p class="portfolio-item">Маркетинг</p>
+                  <p class="cards__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
                     src="./images/portfolio/img5.jpg"
@@ -213,16 +214,16 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">
+                <div class="cards">
+                  <h2 class="cards__title">
                     Проект <span lang="en">Boxes</span>
                   </h2>
-                  <p class="portfolio-item">Додаток</p>
+                  <p class="cards__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img src="./images/portfolio/img6.jpg" alt="Фото сайта" />
                   <div class="overlay">
@@ -235,16 +236,16 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title" lang="en">
+                <div class="cards">
+                  <h2 class="cards__title" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="portfolio-item">Веб-сайт</p>
+                  <p class="cards__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img src="./images/portfolio/img7.jpg" alt="Фото издания" />
                   <div class="overlay">
@@ -257,16 +258,16 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">
+                <div class="cards">
+                  <h2 class="cards__title">
                     Издание <span lang="en">Edition</span>
                   </h2>
-                  <p class="portfolio-item">Дизайн</p>
+                  <p class="cards__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="example-link link" href="">
+            <li class="examples__item">
+              <a class="example__link link" href="">
                 <div class="examples-overlay">
                   <img
                     src="./images/portfolio/img8.jpg"
@@ -282,16 +283,16 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title">
+                <div class="cards">
+                  <h2 class="cards__title">
                     Проект <span lang="en">LAB</span>
                   </h2>
-                  <p class="portfolio-item">Маркетинг</p>
+                  <p class="cards__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="link example-link" href="">
+            <li class="examples__item">
+              <a class="link example__link" href="">
                 <div class="examples-overlay">
                   <img
                     src="./images/portfolio/img9.jpg"
@@ -307,9 +308,9 @@
                   </div>
                 </div>
 
-                <div class="portfolio-desc">
-                  <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                  <p class="portfolio-item">Додаток</p>
+                <div class="cards">
+                  <h2 class="cards__title" lang="en">Growing Business</h2>
+                  <p class="cards__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -319,95 +320,101 @@
     </main>
     <!--Footer section-->
     <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-left">
-          <a class="logo-footer logo-white link" href="./index.html"
+      <div class="footer__container container">
+        <div class="footer-contacts">
+          <a class="logo logo__footer link" href="./index.html"
             ><span class="web">Web</span>Studio</a
           >
           <address class="address">
             <p class="adress-street">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="address-list list">
-              <li class="address-item">
-                <a class="address-link link" href="mailto:info@devstudio.com"
+            <ul class="address__list list">
+              <li class="address__item">
+                <a class="address__link link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <a class="address-link link" href="tel:+380961111111"
+              <li class="address__item">
+                <a class="address__link link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-right">
-          <h2 class="footer-title">Присоединяйтесь</h2>
-          <ul class="footer-list list">
-            <li class="footer-item">
+        <div class="footer-socials">
+          <h2 class="footer-socials__title">Приєднуйтесь</h2>
+          <ul class="footer-socials__list list">
+            <li class="footer-socials__item">
               <a
-                class="footer-link link"
+                class="footer-socials__link link"
                 href=""
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
+            <li class="footer-socials__item">
               <a
-                class="footer-link link"
+                class="footer-socials__link link"
                 href=""
                 rel="noopener noreferrer"
                 aria-label="Twitter"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
+            <li class="footer-socials__item">
               <a
-                class="footer-link link"
+                class="footer-socials__link link"
                 href=""
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
+            <li class="footer-socials__item">
               <a
-                class="footer-link link"
+                class="footer-socials__link link"
                 href=""
                 rel="noopener noreferrer"
                 aria-label="Linkedin"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
-        <h2 class="footer-subscribe-title">Підпишіться на розсилку</h2>
-        <form class="footer-subscribe-form" action="">
-          <input class="footer-subscribe-email" type="text" name="E-mail" placeholder="E-mail" />
 
-          <button class="footer-subscribe-button" type="submit">
-            <span class="subscribe-button-text">Підписатися</span>
-            <svg class="subscribe-button-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+        <!-- Footer-modal -->
+        <div class="footer-subscribe">
+          <h2 class="footer-subscribe__title">Підпишіться на розсилку</h2>
+          <form class="footer-form">
+            <input
+              class="footer-form__input"
+              type="text"
+              name="E-mail"
+              placeholder="E-mail"
+            />
+
+            <button class="footer-subscribe-button" type="submit">
+              <span class="footer-subscribe-button__text">Підписатися</span>
+              <svg class="footer-subscribe-button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <script src=".js/modal.js"></script>
   </body>
 </html>
